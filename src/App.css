@@ -1,38 +1,563 @@
-.App {
-  text-align: center;
+/* -------------------------------------------------------------------------
+ * SF Pro Display
+ * ------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 100;
+  src: url('./assets/fonts/sf-pro-display-ultralight.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-ultralight.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-ultralight.ttf') format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 200;
+  src: url('./assets/fonts/sf-pro-display-thin.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-thin.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-thin.ttf') format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./assets/fonts/sf-pro-display-light.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-light.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/sf-pro-display-regular.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-regular.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/sf-pro-display-medium.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-medium.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/sf-pro-display-semibold.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-semibold.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/sf-pro-display-bold.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-bold.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./assets/fonts/sf-pro-display-heavy.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-heavy.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./assets/fonts/sf-pro-display-black.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-black.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-black.ttf') format('truetype');
+}
+
+/* -------------------------------------------------------------------------
+ * SF Pro Display Italic
+ * ------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: italic;
+  font-weight: 100;
+  src: url('./assets/fonts/sf-pro-display-ultralightitalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-ultralightitalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-ultralightitalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: italic;
+  font-weight: 200;
+  src: url('./assets/fonts/sf-pro-display-thinitalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-thinitalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-thinitalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: italic;
+  font-weight: 300;
+  src: url('./assets/fonts/sf-pro-display-lightitalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-lightitalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-lightitalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./assets/fonts/sf-pro-display-regularitalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-regularitalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-regularitalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: italic;
+  font-weight: 500;
+  src: url('./assets/fonts/sf-pro-display-mediumitalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-mediumitalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-mediumitalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: italic;
+  font-weight: 600;
+  src: url('./assets/fonts/sf-pro-display-semibolditalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-semibolditalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-semibolditalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: italic;
+  font-weight: 700;
+  src: url('./assets/fonts/sf-pro-display-bolditalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-bolditalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-bolditalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: italic;
+  font-weight: 800;
+  src: url('./assets/fonts/sf-pro-display-heavyitalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-heavyitalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-heavyitalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: italic;
+  font-weight: 900;
+  src: url('./assets/fonts/sf-pro-display-blackitalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-display-blackitalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-display-blackitalic.ttf') format('truetype');
+}
+
+/* -------------------------------------------------------------------------
+ * SF Pro Text
+ * ------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: regular;
+  font-weight: 300;
+  src: url('./assets/fonts/sf-pro-text-light.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-text-light.woff') format('woff'),
+    url('./assets/fonts/sf-pro-text-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: regular;
+  font-weight: 400;
+  src: url('./assets/fonts/sf-pro-text-regular.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-text-regular.woff') format('woff'),
+    url('./assets/fonts/sf-pro-text-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: regular;
+  font-weight: 500;
+  src: url('./assets/fonts/sf-pro-text-medium.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-text-medium.woff') format('woff'),
+    url('./assets/fonts/sf-pro-text-medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: regular;
+  font-weight: 600;
+  src: url('./assets/fonts/sf-pro-text-semibold.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-text-semibold.woff') format('woff'),
+    url('./assets/fonts/sf-pro-text-semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: regular;
+  font-weight: 700;
+  src: url('./assets/fonts/sf-pro-text-bold.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-text-bold.woff') format('woff'),
+    url('./assets/fonts/sf-pro-text-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: regular;
+  font-weight: 800;
+  src: url('./assets/fonts/sf-pro-text-heavy.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-text-heavy.woff') format('woff'),
+    url('./assets/fonts/sf-pro-text-heavy.ttf') format('truetype');
+}
+
+/* -------------------------------------------------------------------------
+ * SF Pro Text Italic
+ * ------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: italic;
+  font-weight: 300;
+  src: url('./assets/fonts/sf-pro-text-lightitalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-text-lightitalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-text-lightitalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./assets/fonts/sf-pro-text-regularitalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-text-regularitalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-text-regularitalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: italic;
+  font-weight: 500;
+  src: url('./assets/fonts/sf-pro-text-mediumitalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-text-mediumitalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-text-mediumitalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: italic;
+  font-weight: 600;
+  src: url('./assets/fonts/sf-pro-text-semibolditalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-text-semibolditalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-text-semibolditalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: italic;
+  font-weight: 700;
+  src: url('./assets/fonts/sf-pro-text-bolditalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-text-bolditalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-text-bolditalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: italic;
+  font-weight: 800;
+  src: url('./assets/fonts/sf-pro-text-heavyitalic.woff2') format('woff2'),
+    url('./assets/fonts/sf-pro-text-heavyitalic.woff') format('woff'),
+    url('./assets/fonts/sf-pro-text-heavyitalic.ttf') format('truetype');
+}
+
+/* -------------------------------------------------------------------------
+ * SF Mono
+ * ------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'SF Mono';
+  font-style: regular;
+  font-weight: 300;
+  src: url('./assets/fonts/sfmono-light.woff2') format('woff2'),
+    url('./assets/fonts/sfmono-light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  font-style: regular;
+  font-weight: 400;
+  src: url('./assets/fonts/sfmono-regular.woff2') format('woff2'),
+    url('./assets/fonts/sfmono-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  font-style: regular;
+  font-weight: 500;
+  src: url('./assets/fonts/sfmono-medium.woff2') format('woff2'),
+    url('./assets/fonts/sfmono-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  font-style: regular;
+  font-weight: 600;
+  src: url('./assets/fonts/sfmono-semibold.woff2') format('woff2'),
+    url('./assets/fonts/sfmono-semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  font-style: regular;
+  font-weight: 700;
+  src: url('./assets/fonts/sfmono-bold.woff2') format('woff2'),
+    url('./assets/fonts/sfmono-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  font-style: regular;
+  font-weight: 800;
+  src: url('./assets/fonts/sfmono-heavy.woff2') format('woff2'),
+    url('./assets/fonts/sfmono-heavy.woff') format('woff');
+}
+
+/* -------------------------------------------------------------------------
+ * SF Pro Text Italic
+ * ------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'SF Mono';
+  font-style: italic;
+  font-weight: 300;
+  src: url('./assets/fonts/sfmono-lightitalic.woff2') format('woff2'),
+    url('./assets/fonts/sfmono-lightitalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./assets/fonts/sfmono-regularitalic.woff2') format('woff2'),
+    url('./assets/fonts/sfmono-regularitalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  font-style: italic;
+  font-weight: 500;
+  src: url('./assets/fonts/sfmono-mediumitalic.woff2') format('woff2'),
+    url('./assets/fonts/sfmono-mediumitalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  font-style: italic;
+  font-weight: 600;
+  src: url('./assets/fonts/sfmono-semibolditalic.woff2') format('woff2'),
+    url('./assets/fonts/sfmono-semibolditalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  font-style: italic;
+  font-weight: 700;
+  src: url('./assets/fonts/sfmono-bolditalic.woff2') format('woff2'),
+    url('./assets/fonts/sfmono-bolditalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  font-style: italic;
+  font-weight: 800;
+  src: url('./assets/fonts/sfmono-heavyitalic.woff2') format('woff2'),
+    url('./assets/fonts/sfmono-heavyitalic.woff') format('woff');
+}
+
+/* // Rounded */
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/SF-Pro-Rounded-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./assets/fonts/SF-Pro-Rounded-Heavy.otf') format('opentype');
+}
+
+/* PlayV Front end conpoment css */
+
+a {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btn {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  /* transform: translateY(-2px); */
+  opacity: 0.5;
+}
+.btn:active {
+  /* transform: translateY(-2px); */
+  opacity: 0.3;
+}
+
+.card {
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+.cardtitle {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card.strategy:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.card.strategy:hover > .card-header {
+  background-color: gray-200;
+}
+
+.card-header {
+  transition: all 0.2s ease-in;
+}
+
+.card-footer {
+  vertical-align: bottom;
+}
+
+.strategyImg {
+  width: 4em;
+  align-items: flex-start;
+}
+
+button:not(:disabled) {
+  outline: none;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/images/light-02@2x.png'), url('./assets/images/neon-01@2x.png'),
+    linear-gradient(to bottom, #ffffff, #d5faec);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom 20rem right, top 20rem left 2rem, top;
+  background-size: 40rem, 40rem, 100%;
+}
+
+.icon.right {
+  float: right;
+  height: 2rem;
+}
+
+.roundedfont {
+  font-family: ui-rounded, 'SF Pro Rounded', system-ui, BlinkMacSystemFont, san-serif;
+  font-weight: 800;
+}
+
+.landinghero {
+  background-color: #f6f6f6;
+}
+
+.landingherobackimg {
+  min-height: 30rem;
+  background-image: url(https://s3.ap-northeast-1.amazonaws.com/open.volta/landing/v2/ethereum-perspective-matte@2x.png),
+    url(https://s3.ap-northeast-1.amazonaws.com/open.volta/landing/v2/tether-perspective-matte@2x.png),
+    url(https://s3.ap-northeast-1.amazonaws.com/open.volta/landing/v2/bitcoin-perspective-glossy@2x.png),
+    url(https://s3.ap-northeast-1.amazonaws.com/open.volta/landing/v2/clay-theme%402x.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: left 3em bottom 10px, left 7em bottom 5em, left 1em bottom 10em, center;
+  background-size: 5rem, 6rem, 5rem, contain;
+  animation: landing 3s ease infinite;
+}
+
+.Typewriter {
+  display: inline-block;
+}
+
+@keyframes landing {
+  50% {
+    transform: translateY(-0.5rem);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.strategytab {
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  cursor: pointer;
+}
+/* tab은 나중에 구현  */
+
+.buysellsticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7rem;
+}
+
+.strategyCardCol {
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
+}
+
+.signInInput {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.authCard {
+  height: 35rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signInBg {
+  height: 35rem;
+  position: absolute;
+  left: 4rem;
+  /* object-position: right top;   */
+  /* object-position: 10%; */
+}
+
+.signUpBg {
+  height: 20rem;
+  position: absolute;
+  left: 2rem;
+  top: 15rem;
+  /* object-position: right top;   */
+  /* object-position: 10%; */
+}
+
+.signUpBar {
+  height: 1px;
+}
+
+.nounderline {
+  text-decoration: none !important;
 }

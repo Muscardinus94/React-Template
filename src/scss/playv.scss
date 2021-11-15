@@ -1,0 +1,236 @@
+// scss-docs-start gray-color-variables
+$white: #fff;
+$gray-100: #f4f4f4;
+$gray-200: #d6d6d6;
+$gray-300: #bcbcbc;
+$gray-400: #a9a9a9;
+$gray-500: #7c7c7c;
+$gray-600: #575757;
+$gray-700: #484848;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+// scss-docs-end gray-color-variables
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: (
+  '100': $gray-100,
+  '200': $gray-200,
+  '300': $gray-300,
+  '400': $gray-400,
+  '500': $gray-500,
+  '600': $gray-600,
+  '700': $gray-700,
+  '800': $gray-800,
+  '900': $gray-900,
+);
+// scss-docs-end gray-colors-map
+// fusv-enable
+
+// scss-docs-start theme-color-variables
+$primary: #0098db;
+$secondary: #75efc0; // #DCEC88
+$success: #0098db;
+$warning: #ff3661;
+$info: #dcec88;
+$info-100: #f4f9db;
+$danger: #ff3661;
+$danger: #f54c65;
+$light: #f4f4f4;
+$dark: #3b3b3b;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start color-variables
+$blue: #0d6efd;
+$indigo: #6610f2;
+// $purple:  #6f42c1 ;
+$pink: #d63384;
+// $red:     #E02020 ;
+$orange: #fd7e14;
+// $yellow:  #F7B500 ;
+// $green:   #6DD400 ;
+$teal: #20c997;
+// $cyan:    #B620E0 ;
+$green: #3bd700;
+$red: #f50000;
+$purple: #6932ff;
+$skyblue: #00c8ff;
+$skobleoff: #00dbb4;
+$cyan: #c700e8;
+$slateblue: #0094ff;
+$yellow: #ffb200;
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  'blue': $blue,
+  'indigo': $indigo,
+  'purple': $purple,
+  'pink': $pink,
+  'red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+  'green': $green,
+  'teal': $teal,
+  'cyan': $cyan,
+  'white': $white,
+  'gray': $gray-600,
+  'gray-dark': $gray-800,
+);
+// scss-docs-end colors-map
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'info-100': $info-100,
+  'gray-100': $gray-100,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
+  'white': $white,
+);
+// scss-docs-end theme-colors-map
+
+$container-max-widths: (
+  sm: 560px,
+  md: 560px,
+  lg: 560px,
+  xl: 1200px,
+  xxl: 1200px,
+);
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+// scss-docs-end grid-breakpoints
+
+$border-radius: 1.25rem; //0.938rem;
+$border-radius-sm: 0.625rem;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius: 0.938rem;
+$btn-border-radius-sm: $btn-border-radius; //* 0.85;
+$btn-border-radius-lg: $btn-border-radius; //* 1.25;
+
+$btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+$btn-hover-bg-shade-amount: 0%;
+$btn-hover-bg-tint-amount: 0%;
+$btn-hover-border-shade-amount: 0%;
+$btn-hover-border-tint-amount: 0%;
+$btn-active-bg-shade-amount: 0%;
+$btn-active-bg-tint-amount: 0%;
+$btn-active-border-shade-amount: 0%;
+$btn-active-border-tint-amount: 0%;
+
+$card-cap-bg: $gray-100;
+$min-contrast-ratio: 3.2;
+
+$navbar-padding-y: 0.938rem;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;
+$nav-tabs-border-color: $gray-300;
+$nav-tabs-border-width: 0;
+$nav-tabs-border-radius: $border-radius;
+$nav-link-color: $dark;
+$nav-pills-border-radius: $btn-border-radius;
+$nav-pills-link-active-color: $dark;
+$nav-pills-link-active-bg: $white;
+$nav-link-hover-color: $gray-400;
+$nav-link-padding-y: 0.5rem;
+$nav-link-padding-x: 1rem;
+
+$nav-tabs-link-active-bg: $gray-400;
+$nav-tabs-link-active-border-color: $gray-300 $gray-300 $gray-300; //$nav-tabs-link-active-bg;
+
+$card-border-radius: $border-radius;
+$card-border-width: 0;
+$card-inner-border-radius: $border-radius;
+
+$card-title-spacer-y: 0rem;
+
+$font-family-sans-serif: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-monospace: 'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+  monospace;
+
+$font-family-sans-serif: 'SF Pro Display';
+$font-family-monospace: 'SF Pro Display';
+$font-family-base: 'SF Pro Display';
+$font-size-base: 1.125rem; // this is 18px
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.25;
+
+$h1-font-size: 4.125rem;
+$h2-font-size: 3.4375rem;
+$h3-font-size: 2.625rem;
+$h4-font-size: 2.375rem;
+$h5-font-size: 1.875rem;
+$h6-font-size: 1.75rem;
+
+$text-muted: $gray-300 !default;
+
+$badge-font-size: $font-size-sm;
+$badge-font-weight: 400;
+$badge-color: $white;
+$badge-padding-y: 0.2em;
+$badge-padding-x: 0.2em;
+$badge-border-radius: $btn-border-radius * 0.9;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+$grid-gutter-width: 1.875rem;
+
+$box-shadow: 0 0.313rem 0.625rem rgba($black, 0.15);
+$box-shadow-sm: 0 0.125rem 0.5rem rgba($black, 0.075);
+$box-shadow-lg: 0 0.938rem 1.563rem rgba($black, 0.175);
+$box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
+
+@each $color, $value in $theme-colors {
+  .badge-outline-#{$color} {
+    border: 1px solid $value;
+    color: $value !important;
+    background: transparent !important;
+  }
+}
+
+$input-border-radius: $btn-border-radius;
+$input-border-radius-sm: $btn-border-radius;
+$input-border-radius-lg: $btn-border-radius;
+
+$tooltip-bg: $gray-800;
+$tooltip-max-width: 15rem;
+
+body {
+  * {
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      outline: transparent none 0 !important;
+      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+      -webkit-box-shadow: none !important;
+    }
+  }
+}
